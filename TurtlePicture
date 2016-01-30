@@ -1,0 +1,198 @@
+'''
+Created on Feb 3, 2015
+
+@author: Christopher Lu
+'''
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("DeepSkyBlue")
+
+def draw_house(turt):
+    turt.begin_fill()
+    turt.penup()
+    turt.goto(-200,-200)
+    turt.pendown()
+    turt.pensize(3)
+    turt.color("brown")
+    for i in range(5):
+        turt.forward(400)
+        turt.left(90)
+    turt.end_fill()
+    turt.penup()
+    turt.goto(-1000,-1000)
+    
+#This function draws the square body of the house.
+        
+def garden(turt):
+    turt.begin_fill()
+    turt.penup()
+    turt.goto(-680,-345)
+    turt.pendown()
+    turt.pensize(3)
+    turt.color("green")
+    for i in range(2):
+        turt.forward(1360)
+        turt.left(90)
+        turt.forward(145)
+        turt.left(90)
+    turt.end_fill()
+    turt.penup()
+    turt.goto(-1000,-1000)
+    
+#This function draws the green garden. 
+
+def flowers(turt):
+    turt.pendown()
+    turt.pensize(2)
+    turt.color("red")
+    turt.right(-90)
+    turt.forward(50)
+    turt.penup()
+    turt.right(90)
+    turt.forward(5)
+    turt.pendown()
+    turt.circle(30)
+    for i in range(1,5):
+        turt.penup()
+        turt.left(90)
+        turt.forward(5)
+        turt.right(90)
+        turt.pendown()
+        turt.circle(30 - 6*(i))
+    turt.penup()
+
+#This function draws red spirally flower.
+
+def birds(turt):
+    turt.penup()
+    turt.pensize(2)
+    turt.color("black")
+    turt.goto(-500,100)
+    turt.pendown()
+    turt.left(90)
+    turt.circle(20, 180)
+    turt.left(180)
+    turt.circle(20,180)
+    turt.penup()
+    turt.left(90)
+    turt.forward(200)
+    turt.left(90)
+    turt.pendown()
+    turt.circle(20, 180)
+    turt.left(180)
+    turt.circle(20,180)
+
+#This function draws two birds.
+
+def sun(turt):
+    turt.begin_fill()
+    turt.penup()
+    turt.color("yellow")
+    turt.pensize(3)
+    turt.goto(-510,210)
+    turt.pendown()
+    turt.circle(70)
+    turt.end_fill()
+
+#This function draws a sun.
+
+def windows(turt):
+    turt.begin_fill()
+    turt.pensize(2)
+    turt.color("DimGray")
+    turt.pendown()
+    for i in range(4):
+        turt.forward(100)
+        turt.left(90)
+    turt.end_fill()
+    turt.penup()
+    turt.color("black")
+    turt.forward(50)
+    turt.left(90)
+    turt.pendown()
+    turt.forward(100)
+    turt.penup()
+    turt.left(90)
+    turt.forward(50)
+    turt.left(90)
+    turt.forward(50)
+    turt.left(90)
+    turt.pendown()
+    turt.forward(100)
+
+#This function draws a window on the house.
+
+def door(turt):
+    turt.penup()
+    turt.goto(-25,-200)
+    turt.pendown()
+    turt.color("purple")
+    turt.begin_fill()
+    turt.left(90)
+    turt.forward(100)
+    turt.right(45)
+    turt.forward(40)
+    turt.right(90)
+    turt.forward(40)
+    turt.right(45)
+    turt.forward(100)
+    turt.end_fill()
+
+#This function draws a purple door.
+
+def stamps(turt):
+    turt.penup()
+    turt.goto(-500,-300)
+    turt.color("blue")
+    turt.shape("turtle")
+    for i in range(8):
+        turt.stamp()
+        turt.penup()
+        turt.forward(50)
+        turt.pendown()
+
+##This function draws a line of blue turtles on the garden.
+
+def draw():
+    alex = turtle.Turtle()
+    draw_house(alex)
+    bob = turtle.Turtle()
+    garden(bob)
+    chris = turtle.Turtle()
+    chris.penup()
+    chris.goto(-500,-200)
+    flowers(chris)
+    chris.penup()
+    chris.goto(-400,-200)
+    flowers(chris)
+    chris.penup()
+    chris.goto(-1000,-1000)
+    david = turtle.Turtle()
+    birds(david)
+    david.penup()
+    david.goto(-1000,-1000)
+    evan = turtle.Turtle()
+    sun(evan)
+    evan.penup()
+    evan.goto(-1000,-1000)
+    frank = turtle.Turtle()
+    frank.penup()
+    frank.goto(70,70)
+    windows(frank)
+    frank.penup()
+    frank.goto(-150, 70)
+    windows(frank)
+    frank.penup()
+    frank.goto(-1000,-1000)
+    george = turtle.Turtle()
+    door(george)
+    george.penup()
+    george.goto(-1000,-1000)
+    harry = turtle.Turtle()
+    stamps(harry)
+    
+if __name__ == '__main__':
+    draw()
+    
+    wn.exitonclick()
