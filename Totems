@@ -1,0 +1,284 @@
+'''
+Created on Jan 24, 2015
+
+@author: Christopher lu
+'''
+import random
+
+def eye_circle():
+    a1 = "  ___      ___ "
+    a2 = " / O \    / O \\"
+    a3 = " \___/    \___/"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# Creates a totem with round eyes.
+
+def eye_hypnotized():
+    a1 = "  ___      ___ "
+    a2 = " / @ \    / @ \\"
+    a3 = " \___/    \___/"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# Creates a totem who seems hypnotized.
+
+def eye_confused():
+    a1 = "  ___      ___ "
+    a2 = " / ? \    / ? \\"
+    a3 = " \___/    \___/"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# Creates a totem who has many questions.
+
+def eye_cyclops():
+    a1 = "|     ___     |"
+    a2 = "|    / O \    |"
+    a3 = "|    \___/    |"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# Creates a totem with only one eye.
+
+def mouth_closed():
+    a1 = "|  _________  |"
+    
+    return a1
+# This totem has nothing to say.
+
+def mouth_bling():
+    a1 = "|             |"
+    a2 = "|  $$$$$$$$$  |"
+    a3 = "|   $$$$$$$   |"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem's words must be worth a lot of money.
+
+def mouth_carnivore():
+    a1 = "|  _________  |"
+    a2 = "|  |||||||||  |"
+    a3 = "|  ^^^^^^^^^  |"
+    a4 = "|  _________  |"
+    
+    return a1 + "\n" + a2 + "\n" + "\n" + a3 + a4
+# This totem likes to eat meat and has sharp teeth to do so.
+
+def mouth_teeth():
+    a1 = "|  _________  |"
+    a2 = "|  |_|_|_|_|  |"
+    a3 = "|  |_|_|_|_|  |"    
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem has nearly perfect teeth.    
+
+def mouth_smile():
+    a1 = "|  \       /  |"  
+    a2 = "|   \_____/   |"
+
+    return a1 + "\n" + a2
+# This totem is smiling.
+
+def nose_big():
+    a1 = "|      /      |"
+    a2 = "|     /       |"
+    a3 = "|    /____    |"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem has a big pointy nose.
+
+def nose_tiny():
+    a1 = "|      <      |"
+    
+    return a1
+# This totem has a tiny nose.
+
+def nose_pig():
+    a1 = "|    /   \    |"
+    a2 = "|   (O___O)   |"
+    
+    return a1 + "\n" + a2
+# This totem has a pig-like nose.
+
+def nose_hairy():
+    a1 = "|    /   \    |"
+    a2 = "|   /_____\   |"
+    a3 = "|    6   6    |"
+    
+    return a1 + "\n" + a2 + "\n" +a3
+# This totem has nose hairs.
+
+def hair_longstraight():
+    a1 = "|||||||||||||||"
+    a2 = "|||||||||||||||"
+    a3 = "|||||||||||||||"
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem has long straight hair.
+
+def hair_shortcurly():
+    a1 = "999999999999999"
+    
+    return a1
+# This totem has short curly hair.
+
+def hair_shortstraight():
+    a1  = "|||||||||||||||"
+    
+    return a1
+# This totem has short straight hair.
+
+def hair_mohawk():
+    a1 = "       ^       "
+    a2 = "      ^^^      "
+    a3 = "     ^^^^^     "
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem has a mohawk.
+
+def bowtie_money():
+    a1 = "   $$$     $$$ "
+    a2 = "    $$$$$$$$$  "
+    a3 = "   $$$     $$$ "
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem has a very expensive bowtie.
+
+def bowtie_hypnotize():
+    a1 = "   @@@     @@@ "
+    a2 = "    @@@@@@@@@  "
+    a3 = "   @@@     @@@ "
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem has a hypnotic bowtie.
+
+def bowtie_compsci():
+    a1 = "   com     psc "
+    a2 = "    i_is_awes  "
+    a3 = "   ome     !!! "
+    
+    return a1 + "\n" + a2 + "\n" + a3
+# This totem's bowtie approve of compci.
+
+def chin_flat():
+    a1 = "\_____________/"
+    
+    return a1
+#This totem has a flat chin.
+
+def chin_hair():
+    a1 = "\_____________/"
+    a2 = "     66666     "
+    a3 = "      666      "
+    a4 = "       6       "
+    
+    return a1 + "\n" + a2 +  "\n" + a3 + "\n" + a4
+#This totem has a pointy beard.
+
+def chin_double():
+    a1 = "\___  ___  ___/"
+    a2 = "    \/   \/"
+    
+    return a1 + "\n" + a2
+#This totem has a double chin.
+
+def totem():
+    print hair_longstraight()
+    print eye_confused()
+    print nose_big()
+    print mouth_closed()
+    print chin_flat()
+    print bowtie_money()
+    #That was the first head.
+    print hair_mohawk()
+    print eye_hypnotized()
+    print nose_tiny()
+    print mouth_smile()
+    print chin_hair()
+    print bowtie_hypnotize()
+    #That was the second head.
+    print hair_shortcurly()
+    print eye_circle()
+    print nose_pig()
+    print mouth_bling()
+    print chin_double()
+    print bowtie_money()
+    #Thatt was the third head.
+
+
+def randompole():
+    def random_hair():
+        choice = random.randint(1,5)
+        if choice == 1:
+            return hair_longstraight()
+        elif choice == 2:
+            return hair_shortcurly()
+        elif choice == 3:
+            return hair_shortstraight()
+        else:
+            return hair_mohawk()
+    def random_eye():
+        choice = random.randint(1,5)
+        if choice == 1:
+            return eye_circle()
+        elif choice == 2:
+            return eye_hypnotized()
+        elif choice == 3:
+            return eye_confused()
+        else:
+            return eye_cyclops()
+    def random_nose():
+        choice = random.randint(1,5)
+        if choice == 1:
+            return nose_big()
+        elif choice == 2:
+            return nose_tiny()
+        elif choice == 3:
+            return nose_pig()
+        else:
+            return nose_hairy()
+    def random_mouth():
+        choice = random.randint(1,6)
+        if choice == 1:
+            return mouth_closed()
+        elif choice == 2:
+            return mouth_bling()
+        elif choice == 3:
+            return mouth_carnivore()
+        elif choice == 4:
+            return mouth_teeth()
+        else:
+            return mouth_smile()
+    def random_chin():
+        choice = random.randint(1,4)
+        if choice == 1:
+            return chin_flat()
+        elif choice == 2:
+            return chin_hair()
+        else:
+            return chin_double()
+    def random_bowtie():
+        choice = random.randint(1,4)
+        if choice == 1:
+            return bowtie_money()
+        elif choice == 2:
+            return bowtie_hypnotize()
+        else:
+            return bowtie_compsci()
+    print random_hair()
+    print random_eye()
+    print random_nose()
+    print random_mouth()
+    print random_chin()
+    print random_bowtie()
+
+
+if __name__ == "__main__":
+    # main function to print a totem pole with three heads followed by
+    #   a random totem pole
+    print "My totem pole"
+    print
+    totem()
+    print
+    print
+    print "My random totem pole"
+    print
+    randompole()
+    
+        
